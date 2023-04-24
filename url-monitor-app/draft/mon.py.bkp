@@ -1,0 +1,53 @@
+import csv
+import time
+import requests
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+# Read URLs from CSV file
+urls = []
+with open('urls.csv', 'r') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        urls.append(row)
+       #urls.append(row['url'])
+       #urls.append(row[0])
+
+# Define endpoint to return status
+@app.route('/status')
+def status():
+    summary = []
+    for url in urls:
+        status = requests.get(url['url']).status_code
+        summary.append({'name': url['name'], 'status': status})
+    return jsonify(summary)
+
+# Start monitoring
+# def check_urls():
+#     while True:
+#         for url in urls:
+#             status = requests.get(url['url']).status_code
+#             print(f"{url['name']}: {status}")
+#         time.sleep(600) # Wait for 10 minutes
+
+def check_urls():
+    while True:
+        for url in urls:
+            try:
+                status = requests.get(url).status_code
+            except requests.exceptions.ConnectionError as e:
+                status = None
+                print(f"Error connecting to {url}: {e}")
+            print(f"{url}: {status}")
+        time.sleep(600) # Wait for 10 minutes
+
+
+if __name__ == '__main__':
+    # Start the URL checking process in a separate thread
+    import threading
+    url_thread = threading.Thread(target=check_urls)
+    url_thread.start()
+    #check_urls()
+    #app.run(debug=True, host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=8080, debug=True)

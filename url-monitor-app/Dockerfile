@@ -4,12 +4,18 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --trusted-host pypi.python.org --no-cache-dir -r requirements.txt
 
-COPY moni.py .
+RUN mkdir /templates
 
-COPY urls.csv .
+COPY check.py .
+
+COPY ./csv/urls.csv .
+
+COPY ./templates/index.html ./templates/
+
+COPY ./csv/url_status.csv .
 
 EXPOSE 8080
 
-CMD ["python", "moni.py"]
+CMD ["python", "check.py"]
