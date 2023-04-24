@@ -1,0 +1,79 @@
+name,url
+Google,https://www.google.com
+Facebook,https://www.facebook.com
+Twitter,https://www.twitter.com
+Instagram,https://www.instagram.com
+LinkedIn,https://www.linkedin.com
+Reddit,https://www.reddit.com
+Amazon,https://www.amazon.com
+Wikipedia,https://www.wikipedia.org
+YouTube,https://www.youtube.com
+Netflix,https://www.netflix.com
+Microsoft,https://www.microsoft.com
+Apple,https://www.apple.com
+GitHub,https://www.github.com
+Stack Overflow,https://stackoverflow.com
+Medium,https://medium.com
+Docker Hub,https://hub.docker.com
+Kubernetes,https://kubernetes.io
+Golang,https://golang.org
+Python,https://www.python.org
+Ruby,https://www.ruby-lang.org
+Java,https://www.java.com
+Node.js,https://nodejs.org
+Express.js,https://expressjs.com
+React.js,https://reactjs.org
+Vue.js,https://vuejs.org
+Angular.js,https://angularjs.org
+MongoDB,https://www.mongodb.com
+PostgreSQL,https://www.postgresql.org
+MySQL,https://www.mysql.com
+Redis,https://redis.io
+Elasticsearch,https://www.elastic.co
+Django,https://www.djangoproject.com
+Flask,https://flask.palletsprojects.com
+PyTorch,https://pytorch.org
+TensorFlow,https://www.tensorflow.org
+Keras,https://keras.io
+Scikit-learn,https://scikit-learn.org
+NumPy,https://numpy.org
+Pandas,https://pandas.pydata.org
+Matplotlib,https://matplotlib.org
+Seaborn,https://seaborn.pydata.org
+Plotly,https://plotly.com
+Jupyter,https://jupyter.org
+VS Code,https://code.visualstudio.com
+Atom,https://atom.io
+Sublime Text,https://www.sublimetext.com
+Notepad++,https://notepad-plus-plus.org
+Eclipse,https://www.eclipse.org
+IntelliJ IDEA,https://www.jetbrains.com/idea
+PyCharm,https://www.jetbrains.com/pycharm
+WebStorm,https://www.jetbrains.com/webstorm
+Postman,https://www.postman.com
+Insomnia,https://insomnia.rest
+Swagger,https://swagger.io
+GitLab,https://about.gitlab.com
+Bitbucket,https://bitbucket.org
+Travis CI,https://travis-ci.com
+Jenkins,https://www.jenkins.io
+CircleCI,https://circleci.com
+Docker Compose,https://docs.docker.com/compose
+Kubernetes Helm,https://helm.sh
+Terraform,https://www.terraform.io
+Ansible,https://www.ansible.com
+Chef,https://www.chef.io
+Puppet,https://puppet.com
+Amazon Web Services,https://aws.amazon.com
+Microsoft Azure,https://azure.microsoft.com
+Google Cloud Platform,https://cloud.google.com
+DigitalOcean,https://www.digitalocean.com
+Heroku,https://www.heroku.com
+Netlify,https://www.netlify.com
+Vercel,https://vercel.com
+Nginx,https://www.nginx.com
+Apache HTTP Server,https://httpd.apache.org
+HAProxy,https://www.haproxy.com
+Let's Encrypt,https://letsencrypt.org
+Certbot,https://certbot.eff.org
+Cloudflare,https://www.cloudflare.com
