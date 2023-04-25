@@ -42,7 +42,6 @@ def check_urls():
         for result in results:
             writer.writerow(result)
     return results
-    time.sleep(600)
 
 if __name__ == '__main__':
     results = check_urls()

@@ -13,7 +13,27 @@ variable "aws_secret_key" {
 
 variable "app_name" {
   description = "The name of the application"
-  default = "sph-monitor"
+  default = "url-monitor-app"
+}
+
+variable "container_name" {
+  description = "The name of the application"
+  default = "monitor-app"
+}
+
+variable "cluster_name" {
+  description = "The name of the application"
+  default = "url-monitor-app"
+}
+
+variable "desired_count" {
+  description = "The name of the application"
+  default = "2"
+}
+
+variable "service_name" {
+  description = "The name of the application"
+  default = "monitor-app-svc"
 }
 
 variable "container_port" {
@@ -29,4 +49,9 @@ variable "urls_csv_filename" {
 variable "check_interval_seconds" {
   description = "The interval in seconds to check the URLs"
   default = 600
+}
+
+variable "vpc_name" {
+  description = "The name of the vpc"
+  default = ""
 }
