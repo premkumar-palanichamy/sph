@@ -37,7 +37,7 @@ pipeline {
                     sh 'aws configure set aws_access_key_id ${AWS_ACCESS_KEY_ID}'
                     sh 'aws configure set aws_secret_access_key ${AWS_SECRET_ACCESS_KEY}'
                     sh 'aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com'
-                    sh 'aws ecs register-task-definition --cli-input-json file://task_definition.json'
+                    sh 'aws ecs register-task-definition --cli-input-json file://./terraform-infra/ecs/task-definition.json'
                     sh 'aws ecs update-service --cluster ${ECS_CLUSTER} --service ${ECS_SERVICE} --force-new-deployment'
                 }
             }
