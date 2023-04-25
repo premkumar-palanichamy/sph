@@ -50,8 +50,8 @@ def check_urls():
     return results
 
 if __name__ == '__main__':
-    # Run check_urls() every 2 minutes
-    schedule.every(2).minutes.do(check_urls)
+    # Run check_urls() every 10 minutes (optional)
+    schedule.every(10).minutes.do(check_urls)
     # Continuously update the webpage with the latest results
     while True:
         results = check_urls()
