@@ -1,8 +1,15 @@
 # URL-Monitoring
+This repo contains script which will help you to monitor set of urls every 10 mins.
 
+# Objectives
+This solution is to create a long-running process that checks the HTTP status of a list of up to 1000 URLs every 10 minutes. It also provides a summary of monitoring status in the past hour via a local port. The solution is containerized for easy deployment and scalability, and can be deployed to `aws` cloud provider using Terraform.
 
-
-
+# Prerequisite
+- Python
+- Docker
+- Terraform
+- AWS Subscription
+- Jenkins
 
 
 
